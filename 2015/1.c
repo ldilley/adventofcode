@@ -20,7 +20,7 @@ int main()
 
   if(dat_file == NULL)
   {
-    fprintf(stderr, "Error opening: %s\n", file_name);
+    fprintf(stderr, "Error opening: %s\n", FILE_NAME);
     exit(EXIT_FAILURE);
   }
 
