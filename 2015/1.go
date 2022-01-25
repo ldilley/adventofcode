@@ -11,12 +11,12 @@ import (
   "io/ioutil"
 )
 
-const UP = '('
-const DOWN = ')'
-const FILE_NAME = "1.dat"
+const UP = '('            // instruction to go up a floor
+const DOWN = ')'          // instruction to go down a floor
+const FILE_NAME = "1.dat" // data file name
 
 func main() {
-  var position = 0
+  var position = 0        // current floor number
   data, err := ioutil.ReadFile(FILE_NAME)
   if err != nil {
     fmt.Println("Unable to parse input file:\n", err)

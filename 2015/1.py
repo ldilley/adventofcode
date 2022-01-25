@@ -8,9 +8,9 @@ import sys
 
 UP = '('             # instruction to go up a floor
 DOWN = ')'           # instruction to go down a floor
-INPUT_FILE = "1.dat" # input data file name
+INPUT_FILE = "1.dat" # data file name
 
-position = 0
+position = 0         # current floor number
 
 try:
   data_file = open(INPUT_FILE)
