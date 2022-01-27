@@ -1,0 +1,6 @@
+*.beam
+*.class
+*.exe
+*.o
+*.obj
+*.pyc
