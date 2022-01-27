@@ -1,6 +1,9 @@
 *.beam
 *.class
+*.core
 *.exe
 *.o
 *.obj
 *.pyc
+bin/
+obj/
