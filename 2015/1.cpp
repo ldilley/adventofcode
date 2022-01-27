@@ -17,15 +17,15 @@ int main()
 {
   char direction = '-';                       // up or down
   signed int position = 0;                    // current floor number
-  ifstream dat_file(FILE_NAME);               // data file
+  ifstream data_file(FILE_NAME);              // data file
 
-  if(!dat_file.is_open())
+  if(!data_file.is_open())
   {
     cerr << "Unable to open " << FILE_NAME << '.' << endl;
     exit(EXIT_FAILURE);
   }
 
-  while(dat_file.get(direction))
+  while(data_file.get(direction))
   {
     if(direction == UP)
       position++;
@@ -33,7 +33,7 @@ int main()
       position--;
     cout << "Current floor: #" << position << endl;
   }
-  dat_file.close();
+  data_file.close();
   cout << "Arrived at destination floor: #" << position << endl;
   return 0;
 }
