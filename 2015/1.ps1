@@ -8,20 +8,28 @@ Set-Variable UP -Option Constant -Value '('            # instruction to go up a 
 Set-Variable DOWN -Option Constant -Value ')'          # instruction to go down a floor
 Set-Variable FILE_NAME -Option Constant -Value "1.dat" # data file name
 
-$position = 0                                          # current floor number
-$data_file = New-Object System.IO.StreamReader($FILE_NAME)
-while(!$data_file.EndOfStream)
+try
 {
-  $direction = [char]$data_file.Read()
-  if($direction -eq $UP)
+  $position = 0                                        # current floor number
+  $data_file = New-Object System.IO.StreamReader($FILE_NAME)
+  while(!$data_file.EndOfStream)
   {
-    $position++
+    $direction = [char]$data_file.Read()
+    if($direction -eq $UP)
+    {
+      $position++
+    }
+    if($direction -eq $DOWN)
+    {
+      $position--
+    }
+    Write-Output "Current floor: #$position"
   }
-  if($direction -eq $DOWN)
-  {
-    $position--
-  }
-  Write-Output "Current floor: #$position"
+  $data_file.Dispose()
+  Write-Output "Arrived at destination floor: #$position"
 }
-$data_file.Dispose()
-Write-Output "Arrived at destination floor: #$position"
+catch
+{
+  Write-Output "Unable to parse input file:"
+  Write-Output $_
+}
