@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # Advent of Code 2015 day 2 solution in Ruby
-# http://adventofcode.com/2015/day/1
+# http://adventofcode.com/2015/day/2
 # Lloyd Dilley
 
 DELIMITER = "x"     # delimiter from data file
