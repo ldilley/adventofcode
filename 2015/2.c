@@ -71,20 +71,20 @@ unsigned int calculate_ribbon(unsigned int length, unsigned int width, unsigned 
 
 int main()
 {
-  FILE *dat_file = fopen(FILE_NAME,"r");          // data file
+  FILE *data_file = fopen(FILE_NAME,"r");         // data file
   unsigned int length = 0, width = 0, height = 0; // dimensions of box in feet
   char line[128];                                 // holds a line from data file
   char *token = NULL;                             // refers to length, width, and height values during strtok()
   unsigned long wrap_total = 0;                   // total amount in square feet of wrapping paper required
   unsigned long ribbon_total = 0;                 // total amount in feet of ribbon required
 
-  if(dat_file == NULL)
+  if(data_file == NULL)
   {
     fprintf(stderr, "Error opening: %s\n", FILE_NAME);
     exit(EXIT_FAILURE);
   }
 
-  while(fgets(line, sizeof(line), dat_file))
+  while(fgets(line, sizeof(line), data_file))
   {
     token = strtok(line, DELIMITER);
     length = atoi(token);
@@ -100,6 +100,6 @@ int main()
 
   printf("Total wrapping paper required: %lu sq. ft.\n", wrap_total);
   printf("Total ribbon required: %lu ft.\n", ribbon_total);
-  fclose(dat_file);
+  fclose(data_file);
   return 0;
 }
