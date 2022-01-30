@@ -6,11 +6,11 @@
 
 UP = '('             # instruction to go up a floor
 DOWN = ')'           # instruction to go down a floor
-INPUT_FILE = "1.dat" # data file name
+FILE_NAME = "1.dat"  # data file name
 
 begin
   position = 0       # current floor number
-  File.open(INPUT_FILE).each_char do |direction|
+  File.open(FILE_NAME).each_char do |direction|
     position += 1 if direction == UP
     position -= 1 if direction == DOWN
     puts("Current floor: ##{position}")

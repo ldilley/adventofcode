@@ -8,12 +8,12 @@ import sys
 
 UP = '('             # instruction to go up a floor
 DOWN = ')'           # instruction to go down a floor
-INPUT_FILE = "1.dat" # data file name
+FILE_NAME = "1.dat"  # data file name
 
 position = 0         # current floor number
 
 try:
-  data_file = open(INPUT_FILE)
+  data_file = open(FILE_NAME)
   while True:
     direction = data_file.read(1)
     if direction == UP:
