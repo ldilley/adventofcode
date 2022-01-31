@@ -4,11 +4,11 @@
 # http://adventofcode.com/2015/day/3
 # Lloyd Dilley
 
-NORTH = '^'         # instruction to go up
-EAST = '>'          # instruction to go right
-SOUTH = 'v'         # instruction to go down
-WEST = '<'          # instruction to go left
-FILE_NAME = "3.dat" # data file name
+NORTH = '^'                  # instruction to go up
+EAST = '>'                   # instruction to go right
+SOUTH = 'v'                  # instruction to go down
+WEST = '<'                   # instruction to go left
+FILE_NAME = "3.dat"          # data file name
 
 begin
   x = 0                      # generic 'x' coordinate
