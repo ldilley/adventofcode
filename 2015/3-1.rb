@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Advent of Code 2015 day 3 solution in Ruby
+# Advent of Code 2015 day 3 part 1 solution in Ruby
 # http://adventofcode.com/2015/day/3
 # Lloyd Dilley
 
