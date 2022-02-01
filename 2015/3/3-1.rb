@@ -39,7 +39,7 @@ begin
     add_gift(homes, x, y)
     puts("Current coordinates: #{x}, #{y}")
     puts("Homes visited: #{homes.size}")
-  end  
+  end
 rescue Exception => e
   puts("Unable to parse input file: #{e.message}")
 end
