@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Advent of Code 2022 day 2 solution in Ruby
+# Advent of Code 2022 day 2 part 1 solution in Ruby
 # http://adventofcode.com/2022/day/2
 # Lloyd Dilley
 
