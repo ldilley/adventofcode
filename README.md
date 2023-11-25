@@ -1,2 +1,2 @@
 # Advent of Code
-Advent of Code (http://adventofcode.com/) solutions
+:christmas_tree: Advent of Code (http://adventofcode.com/) solutions
